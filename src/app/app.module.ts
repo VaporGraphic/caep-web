@@ -8,6 +8,9 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+//IMAGE SLIDER
+import { NgImageSliderModule } from 'ng-image-slider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
+    NgImageSliderModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule

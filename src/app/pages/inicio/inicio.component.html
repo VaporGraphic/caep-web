@@ -1,3 +1,4 @@
+
 <div class="container">
     <!--BIENVENIDA-->
     <section class="row">
@@ -27,6 +28,9 @@
             <img class="img-fluid" src="../../../assets/images/inicio/landing.png" alt="">
         </div>
     </section>
+    
+
+    <br>
 
     <!--NOSOTROS-->
     <section class="row py-4">
@@ -48,6 +52,24 @@
         </div>
         
     </section>
+
+    <br>
+
+   
+    <!--CARROUSEL EVENTOS-->
+    <div class="row">
+        <div class="col-12 mb-4 fw-bold lead text-center">
+            Eventos recientes
+        </div>
+        
+        <div class="col-12">
+            <ng-image-slider [imageSize]="{width: '300px', height: '250px', space: 4}" [animationSpeed]='.5' [infinite]="true" [manageImageRatio]="true" [showArrow]="true" [images]="imageObject" #nav></ng-image-slider>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
 
     <!--EVENTOS Y REDES SOCIALES-->
     <section class="row d-none">
