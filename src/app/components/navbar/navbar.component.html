@@ -1,0 +1,60 @@
+<div class="container-fluid d-flex align-items-center appbar">
+  <div class="container">
+    <div
+      class="row d-flex align-items-center text-align-center text-center fw-bold"
+    >
+      <!--BRAND LOGO-->
+      <div class="col-auto p-0">
+        <img
+          class="brandImage "
+          src="../../../assets/images/brand/icon-logo.png"
+          alt="Logo CAEP"
+        />
+      </div>
+      <!--LIST SECTIONS FULL-->
+      <div class="col d-flex justify-content-end">
+        <section class="d-none d-md-block">
+          <div class="row">
+            <div class="col-auto px-0" *ngFor="let section of _listSections">
+              <button class="btn btnSections" type="button">
+                <span class="fw-bold bntSections">{{ section.titulo }}</span>
+              </button>
+            </div>
+            <div class="col-auto">
+              <div class="row">
+                <div class="col-auto px-0" *ngFor="let social of _listSocial">
+                  <button class="btn btn-link" type="button">
+                    <i class="bi {{social.icon}} {{social.color}} lead "></i>
+                  </button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="d-block d-md-none">
+            <div ngbDropdown container="body">
+                <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>
+                    <i class="bi bi-list btnSections lead"></i>
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <button ngbDropdownItem *ngFor="let section of _listSections">
+                    <button class="btn btnSections" type="button">
+                        <span class="fw-bold bntSections">{{ section.titulo }}</span>
+                      </button>
+                  </button>
+                  <div class="px-4" >
+                        <button class="btn btn-link" type="button" *ngFor="let social of _listSocial">
+                          <i class="bi {{social.icon}} {{social.color}} lead "></i>
+                        </button>
+
+                     
+                  </div>
+               
+                </div>
+              </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

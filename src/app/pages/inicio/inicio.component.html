@@ -1,0 +1,63 @@
+<div class="container">
+    <!--BIENVENIDA-->
+    <section class="row">
+        <div class="col-md-6 col-12">
+            <br>
+            <section class="d-none d-md-block">
+                <br>
+                <br>
+
+            </section>
+            
+            <p class="titleFont lead fw-bold">Centro de atención y enseñanza psicoanalítica</p>
+            <h1 class="titleFont text-caep fw-bold">
+                Bienvenido a CAEP México
+            </h1> 
+            <br class="d-none d-md-block">
+            <p >Comprometidos con la atención clínica, enseñanza y constante actualización psicoanalítica </p>
+
+            <button class="btn btn-primary  btn-lg my-2 mr-2" type="button">Conoce nuestros servicios</button>
+
+            <button class="btn btn-light btn-lg my-2 " type="button">Contactanos</button>  
+            <br> 
+
+        
+        </div>
+        <div class="col-md-6 col-12">
+            <img class="img-fluid" src="../../../assets/images/inicio/landing.png" alt="">
+        </div>
+    </section>
+
+    <!--NOSOTROS-->
+    <section class="row py-4">
+        <div class="col-12 fw-bold lead text-center pb-3">
+            ¿Quienes somos?
+        </div>
+        <div class="col-12 text-center col-md-4 " *ngFor="let info of listAboutUs">
+            <div class="w-100 d-flex justify-content-center pb-2">
+                <div class="iconContainer d-flex align-items-center justify-content-center">
+                    <i class="bi {{info.icon}} lead text-light"></i>
+                </div>
+   
+            </div>
+            <p class="fw-bold">{{info.title}}</p>
+            <p class="text-lines-3 my-0">{{info.text}}</p>
+            <button class="btn btn-link btn-sm my-0" type="button">Leer más <i class="bi bi-arrow-right-short"></i></button>
+            <br>
+            <br>
+        </div>
+        
+    </section>
+
+    <!--EVENTOS Y REDES SOCIALES-->
+    <section class="row d-none">
+        <div class="col-12 col-md">
+            Ejemplo
+        </div>
+        <div class="col-12 d-flex justify-content-center bg-caep  p-3 rounded-2 col-md-auto">
+            <iframe class="rounded" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpsicologia.psicoanalisis.saludmental&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </section>
+
+   
+</div>
